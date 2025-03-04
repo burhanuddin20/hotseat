@@ -1,23 +1,19 @@
+import './styles/NavBar.css'; // Import the CSS file
+
 const NavBar = () => {
   return (
-    <nav className="sticky top-0 w-full bg-white shadow-md z-10">
-      <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-        <div className="text-2xl font-semibold text-gray-900">Hotseat</div>
-        <ul className="flex space-x-6">
+    <nav className="navbar">
+      <div className="navbar__container">
+        <div className="navbar__logo">Hotseat</div>
+        <ul className="navbar__menu">
           <li>
-            <a href="#home" className="text-gray-900 hover:text-blue-500 transition duration-200">
-              Home
-            </a>
+            <a href="#home" className="navbar__link">Home</a>
           </li>
           <li>
-            <a href="#about" className="text-gray-900 hover:text-blue-500 transition duration-200">
-              Rooms
-            </a>
+            <a href="#about" className="navbar__link">Rooms</a>
           </li>
           <li>
-            <a href="#features" className="text-gray-900 hover:text-blue-500 transition duration-200">
-              Log In
-            </a>
+            <a href="#features" className="navbar__link">Log In</a>
           </li>
         </ul>
       </div>
