@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './styles/Hero.css'; 
 
 const Hero = () => {
@@ -14,10 +15,11 @@ const Hero = () => {
       <p className="hero__description">
         Hotseat lets you enter live debates, challenge others, vote for the strongest arguments and earn rewards. Can you hold the Hotseat?
       </p>
-      
+      <Link to="/signup">
       <button className="hero__button">
         Sign Up
       </button>
+      </Link>
     </section>
   );
 };
