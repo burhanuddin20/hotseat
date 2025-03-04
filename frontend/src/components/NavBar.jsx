@@ -5,13 +5,8 @@ const NavBar = () => {
   return (
     <nav className="navbar">
       <div className="navbar__container">
-        <div className="navbar__logo">Hotseat</div>
+        <Link to="/"  className="navbar__logo">Hotseat</Link>
         <ul className="navbar__menu">
-          <li>
-            <Link to="/" className="navbar__link">
-              Home
-            </Link>
-          </li>
           <li>
             <a href="#about" className="navbar__link">
               Rooms
